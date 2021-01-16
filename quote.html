@@ -137,20 +137,22 @@
 						</select>
 					</div>
 					<br>
+					<form id="tier-selection">
 					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="tier-selection" id="standard" checked>
+						<input class="form-check-input" type="radio" name="tier-selected" id="standard" value="standard" checked>
 						<label class="form-check-label" for="standard">Standard ($7,565/shaft, 10% installation fee)</label>
 					</div>
 					<br>
 					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="tier-selection" id="premium">
+						<input class="form-check-input" type="radio" name="tier-selected" id="premium" value="premium">
 						<label class="form-check-label" for="premium">Premium ($12,345/shaft, 13% installation fee)</label>
 					</div>
 					<br>
 					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="tier-selection" id="excelium">
+						<input class="form-check-input" type="radio" name="tier-selected" id="excelium" value="excelium">
 						<label class="form-check-label" for="excelium">Excelium ($15,400/shaft, 16% installation fee)</label>
 					</div>
+					</form>
 				</form>
 
 					
@@ -165,7 +167,7 @@
 					</div>
 
 					<div id="number-of-floors" class="form-group form-field residential">
-						<label for="residential-floor-number">Number of floors:</label>
+						<label for="residential-floor-number">Number of floors: (excluding basements)</label>
 						<input type="number" class="col-sm-2 col-md-offset-6" id="residential-floor-number">
 					</div>
 
@@ -187,7 +189,7 @@
 					</div>
 
 					<div id="number-of-floors" class="form-group form-field commercial">
-						<label for="commercial-floor-number">Number of floors:</label>
+						<label for="commercial-floor-number">Number of floors: (excluding basements)</label>
 						<input type="number" class="col-sm-2 col-md-offset-6" id="commercial-floor-number">
 					</div>
 
@@ -219,7 +221,7 @@
 					</div>
 
 					<div id="number-of-floors" class="form-group form-field corporate">
-						<label for="corporate-floor-number">Number of floors:</label>
+						<label for="corporate-floor-number">Number of floors (excluding basements):</label>
 						<input type="number" class="col-sm-2 col-md-offset-6" id="corporate-floor-number">
 					</div>
 
@@ -251,7 +253,7 @@
 					</div>
 
 					<div id="number-of-floors" class="form-group form-field hybrid">
-						<label for="hybrid-floor-number">Number of floors:</label>
+						<label for="hybrid-floor-number">Number of floors: (excluding basements)</label>
 						<input type="number" class="col-sm-2 col-md-offset-6" id="hybrid-floor-number">
 					</div>
 
