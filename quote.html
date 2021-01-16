@@ -138,141 +138,141 @@
 					</div>
 					<br>
 					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="tier_selection" id="standard" checked>
-						<label class="form-check-label" for="standard">Standard ($7,565/shaft)</label>
+						<input class="form-check-input" type="radio" name="tier-selection" id="standard" checked>
+						<label class="form-check-label" for="standard">Standard ($7,565/shaft, 10% installation fee)</label>
 					</div>
-
+					<br>
 					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="tier_selection" id="premium">
-						<label class="form-check-label" for="premium">Premium ($12,345/shaft)</label>
+						<input class="form-check-input" type="radio" name="tier-selection" id="premium">
+						<label class="form-check-label" for="premium">Premium ($12,345/shaft, 13% installation fee)</label>
 					</div>
-
+					<br>
 					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="tier_selection" id="excelium">
-						<label class="form-check-label" for="excelium">Excelium ($15,400/shaft)</label>
+						<input class="form-check-input" type="radio" name="tier-selection" id="excelium">
+						<label class="form-check-label" for="excelium">Excelium ($15,400/shaft, 16% installation fee)</label>
 					</div>
 				</form>
 
 					
 
 				<!--RESIDENTIAL INPUTS-->
-				<form name="residential" id="residential" class="text-center" style="display:none">
+				<form name="residential" id="residential" class="text-center sub-form" style="display:none">
 				<h4 class="text-center">Please enter the following information:</h4>
-				<div id="residential_input">
+				<div id="residential-input">
 					<div id="number-of-apartments" class="form-group form-field residential">
-						<label for="apartment_number">Number of apartments:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="apartment_number">
+						<label for="residential-apartment-number">Number of apartments:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="residential-apartment-number">
 					</div>
 
 					<div id="number-of-floors" class="form-group form-field residential">
-						<label for="floor_number">Number of floors:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="floor_number">
+						<label for="residential-floor-number">Number of floors:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="residential-floor-number">
 					</div>
 
 					<div id="number-of-basements" class="form-group form-field residential">
-						<label for="basement_number">Number of basements:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="basement_number">
+						<label for="residential-basement-number">Number of basements:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="residential-basement-number">
 					</div>
 				</div>
 				</form>
 				<!--/RESIDENTIAL INPUTS-->
 				
 				<!--COMMERCIAL INPUTS-->
-				<form name="commercial" id="commercial" class="text-center" style="display:none">
+				<form name="commercial" id="commercial" class="text-center sub-form" style="display:none">
 				<h4 class="text-center">Please enter the following information:</h4>
-				<div id="commercial_input">
+				<div id="commercial-input">
 					<div id="number-of-companies" class="form-group form-field commercial">
-						<label for="business_number">Number of distinct businesses:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="business_number">
+						<label for="commercial-business-number">Number of distinct businesses:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="business-number">
 					</div>
 
 					<div id="number-of-floors" class="form-group form-field commercial">
-						<label for="floor_number">Number of floors:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="floor_number">
+						<label for="commercial-floor-number">Number of floors:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="commercial-floor-number">
 					</div>
 
 					<div id="number-of-basements" class="form-group form-field commercial">
-						<label for="basement_number">Number of basements:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="basement_number">
+						<label for="commercial-basement-number">Number of basements:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="commercial-basement-number">
 					</div>
 
 					<div id="number-of-parking-spots" class="form-group form-field commercial">
-						<label for="parking_spaces">Number of parking spaces:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="parking_spaces">
+						<label for="commercial-parking-spaces">Number of parking spaces:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="commercial-parking-spaces">
 					</div>
 
 					<div id="number-of-elevators" class="form-group form-field commercial">
-						<label for="elevator_cages">Number of elevator cages to be deployed:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="elevator_cages">
+						<label for="commercial-elevator-cages">Number of elevator cages to be deployed:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="commercial-elevator-cages">
 					</div>
 				</div>
 				</form>
 				<!--/COMMERCIAL INPUTS-->
 				
 				<!--CORPORATE INPUTS-->
-				<form name="corporate" id="corporate" class="text-center" style="display:none">
+				<form name="corporate" id="corporate" class="text-center sub-form" style="display:none">
 				<h4 class="text-center">Please enter the following information:</h4>
-				<div id="corporate_input">
+				<div id="corporate-input">
 					<div id="number-of-corporations" class="form-group form-field corporate">
-						<label for="companies">Number of separate tenant companies:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="companies">
+						<label for="corporate-number-of-companies">Number of separate tenant companies:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="corporate-number-of-companies">
 					</div>
 
 					<div id="number-of-floors" class="form-group form-field corporate">
-						<label for="floor_number">Number of floors:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="floor_number">
+						<label for="corporate-floor-number">Number of floors:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="corporate-floor-number">
 					</div>
 
 					<div id="number-of-basements" class="form-group form-field corporate">
-						<label for="basement_number">Number of basements:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="basement_number">
+						<label for="corporate-basement-number">Number of basements:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="corporate-basement-number">
 					</div>
 
 					<div id="number-of-parking-spots" class="form-group form-field corporate">
-						<label for="parking_spaces">Number of parking spaces:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="parking_spaces">
+						<label for="corporate-parking-spaces">Number of parking spaces:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="corporate-parking-spaces">
 					</div>
 
 					<div id="maximum-occupancy" class="form-group form-field corporate">
-						<label for="people_floor">Maximum number of people per floor:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="people_floor">
+						<label for="corporate-people-floor">Maximum number of people per floor:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="corporate-people-floor">
 					</div>
 				</div>
 				</form>
 				<!--/CORPORATE INPUTS-->
 				
 				<!--HYBRID INPUTS-->
-				<form name="hybrid" id="hybrid" class="text-center" style="display:none">
+				<form name="hybrid" id="hybrid" class="text-center sub-form" style="display:none">
 				<h4 class="text-center">Please enter the following information:</h4>
 				<div id="hybrid-input">
 					<div id="number-of-companies" class="form-group form-field hybrid">
-						<label for="business_number">Number of distinct businesses:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="business_number">
+						<label for="hybrid-business-number">Number of distinct businesses:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="hybrid-business-number">
 					</div>
 
 					<div id="number-of-floors" class="form-group form-field hybrid">
-						<label for="floor_number">Number of floors:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="floor_number">
+						<label for="hybrid-floor-number">Number of floors:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="hybrid-floor-number">
 					</div>
 
 					<div id="number-of-basements" class="form-group form-field hybrid">
-						<label for="basement_number">Number of basements:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="basement_number">
+						<label for="hybrid-basement-number">Number of basements:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="hybrid-basement-number">
 					</div>
 
 					<div id="number-of-parking-spots" class="form-group form-field hybrid">
-						<label for="parking_spaces">Number of parking spaces:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="parking_spaces">
+						<label for="hybrid-parking-spaces">Number of parking spaces:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="hybrid-parking-spaces">
 					</div>
 
 					<div id="maximum-occupancy" class="form-group form-field hybrid">
-						<label for="people_floor">Maximum number of people per floor:</label>
-						<input type="text" class="col-sm-2 col-md-offset-6" id="people_floor">
+						<label for="hybrid-people-floor">Maximum number of people per floor:</label>
+						<input type="number" class="col-sm-2 col-md-offset-6" id="hybrid-people-floor">
 					</div>
 
 					<div id="business-hours" class="form-group form-field hybrid">
-						<label for="active_hours">Building active hours per day:</label>
-						<select class="col-sm-2 col-md-offset-6" id="active_hours">
+						<label for="hybrid-active-hours">Building active hours per day:</label>
+						<select class="col-sm-2 col-md-offset-6" id="hybrid-active-hours">
 							<option selected id="0" value="0">0</option>
 							<option id="1" value="1">1</option>
 							<option id="2" value="2">2</option>
@@ -305,19 +305,34 @@
 				<!--/HYBRID INPUTS-->
 
 				<!--QUOTE OUTPUTS-->
-				<div id="quote_output">
+				<div id="quote-output">
 				<h2 class="text-center">Your instant quote:</h2>
 
 				<form class="text-center">
-					<div id="quote_output_fields">
+					<div id="quote-output-fields">
 						<div class="form-group">
-							<label for="elevator_number">Number of elevators:</label>
-							<input type="text" readonly class="col-sm-2 col-md-offset-6 plaintext" id="elevator_number">
+							<label for="elevator-amount">Number of elevators required:</label>
+							<input type="text" readonly class="col-sm-2 col-md-offset-6 plaintext" id="elevator-amount">
 						</div>
 
 						<div class="form-group">
-							<label for="quote_total">Installation Quote:</label>
-							<input type="text" readonly class="col-sm-2 col-md-offset-6 plaintext" id="quote_total">
+							<label for="elevator-unit-price">Price per unit:</label>
+							<input type="text" readonly class="col-sm-2 col-md-offset-6 plaintext" id="elevator-unit-price">
+						</div>
+
+						<div class="form-group">
+							<label for="elevator-total-price">Price of all Elevators:</label>
+							<input type="text" readonly class="col-sm-2 col-md-offset-6 plaintext" id="elevator-total-price">
+						</div>
+
+						<div class="form-group">
+							<label for="installation-fees">Installation fees:</label>
+							<input type="text" readonly class="col-sm-2 col-md-offset-6 plaintext" id="installation-fees">
+						</div>
+
+						<div class="form-group">
+							<label for="final-price">Final price:</label>
+							<input type="text" readonly class="col-sm-2 col-md-offset-6 plaintext" id="final-price">
 						</div>
 					</div>
 					
