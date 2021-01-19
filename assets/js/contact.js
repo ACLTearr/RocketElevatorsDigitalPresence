@@ -13,3 +13,7 @@ var _hash = window.location.hash;
 document.querySelector("#contact_submit").addEventListener("click", () => {
 	alert("Message sent successfully!")
 })
+
+document.querySelector("#subscribe").addEventListener("click", () => {
+	alert("Thank you for subscribing!")
+})
