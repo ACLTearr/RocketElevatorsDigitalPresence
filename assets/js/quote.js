@@ -1,10 +1,10 @@
 $(document).ready(function() {
   //Building Type Selection
   $("#building-type").on("change", function() {
-      console.log("change",$(this).val())
-      $(".sub-form").hide()
-      $("#" + $(this).val()).show();
-    });
+    console.log("change",$(this).val())
+    $(".sub-form").hide()
+    $("#" + $(this).val()).show();
+  });
 
   //Set default tier cost
   $("#elevator-unit-price").val("$" + $("input[type='radio'][name='tier-selected']:checked").val());
