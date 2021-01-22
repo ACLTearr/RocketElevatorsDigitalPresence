@@ -6,20 +6,20 @@ $(document).ready(function() {
   
     $(".sub-form").hide()
   
-    $("#" + $(this).val()).show();
+    $("." + $(this).val()).show();
 
-    $("#elevator-amount").val("");
+    $("#elevator-amount-output").val("");
   
-    $("#elevator-total-price").val("");
+    $("#elevator-total-price-output").val("");
   
-    $("#final-price").val("");
+    $("#final-price-output").val("");
   
-    $("#installation-fees").val("");
+    $("#installation-fees-output").val("");
   
   });
 
   //Set default tier cost
-  $("#elevator-unit-price").val("$7,565.00");
+  $("#elevator-unit-price-output").val("$7,565.00");
   
   //Tier Selection Cost Setting (Price per unit output)
   $("input[type='radio'][name='tier-selected']").on("change", function() {
@@ -27,15 +27,15 @@ $(document).ready(function() {
     //Setting Price per unit form value
     if ($("input[type='radio'][name='tier-selected']:checked").val() === "7565") {
     
-      $("#elevator-unit-price").val("$7,565.00");
+      $("#elevator-unit-price-output").val("$7,565.00");
     
     } else if ($("input[type='radio'][name='tier-selected']:checked").val() === "12345") {
     
-      $("#elevator-unit-price").val("$12,345.00");
+      $("#elevator-unit-price-output").val("$12,345.00");
     
     } else if ($("input[type='radio'][name='tier-selected']:checked").val() === "15400") {
     
-      $("#elevator-unit-price").val("$15,400.00");
+      $("#elevator-unit-price-output").val("$15,400.00");
     
     };
   
@@ -83,13 +83,13 @@ $(document).ready(function() {
       
         //Setting output fields
 
-        $("#elevator-amount").val(totalElevators + " Elevators");
+        $("#elevator-amount-output").val(totalElevators + " Elevators");
         
-        $("#elevator-total-price").val(elevatorCost);
+        $("#elevator-total-price-output").val(elevatorCost);
         
-        $("#final-price").val(finalPrice);
+        $("#final-price-output").val(finalPrice);
         
-        $("#installation-fees").val(elevatorCost * installationFees);
+        $("#installation-fees-output").val(elevatorCost * installationFees);
 
         $(".currency").formatCurrency();
 
@@ -121,13 +121,13 @@ $(document).ready(function() {
       var finalPrice = elevatorCost + (elevatorCost * installationFees);
     
       //Setting output fields
-      $("#elevator-amount").val(commercialElevatorCages + " Elevators");
+      $("#elevator-amount-output").val(commercialElevatorCages + " Elevators");
     
-      $("#elevator-total-price").val(elevatorCost);
+      $("#elevator-total-price-output").val(elevatorCost);
     
-      $("#final-price").val(finalPrice);
+      $("#final-price-output").val(finalPrice);
     
-      $("#installation-fees").val(elevatorCost * installationFees);
+      $("#installation-fees-output").val(elevatorCost * installationFees);
 
       $(".currency").formatCurrency();
 
@@ -171,13 +171,13 @@ $(document).ready(function() {
           var finalPrice = elevatorCost + (elevatorCost * installationFees);
         
           //Setting output fields
-          $("#elevator-amount").val(totalElevators + " Elevators");
+          $("#elevator-amount-output").val(totalElevators + " Elevators");
         
-          $("#elevator-total-price").val(elevatorCost);
+          $("#elevator-total-price-output").val(elevatorCost);
         
-          $("#final-price").val(finalPrice);
+          $("#final-price-output").val(finalPrice);
         
-          $("#installation-fees").val(elevatorCost * installationFees);
+          $("#installation-fees-output").val(elevatorCost * installationFees);
 
           $(".currency").formatCurrency();
 
@@ -233,13 +233,13 @@ $(document).ready(function() {
           var finalPrice = elevatorCost + (elevatorCost * installationFees);
         
           //Setting output fields
-          $("#elevator-amount").val(totalElevators + " Elevators");
+          $("#elevator-amount-output").val(totalElevators + " Elevators");
         
-          $("#elevator-total-price").val(elevatorCost);
+          $("#elevator-total-price-output").val(elevatorCost);
         
-          $("#final-price").val(finalPrice);
+          $("#final-price-output").val(finalPrice);
         
-          $("#installation-fees").val(elevatorCost * installationFees);
+          $("#installation-fees-output").val(elevatorCost * installationFees);
 
           $(".currency").formatCurrency();
 

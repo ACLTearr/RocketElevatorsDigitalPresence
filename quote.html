@@ -170,13 +170,13 @@
 
 										<option selected disabled hidden>Please select building type</option>
 
-										<option value="residential">Residential</option>
+										<option id="residential" value="residential">Residential</option>
 
-										<option value="commercial">Commercial</option>
+										<option id="commercial" value="commercial">Commercial</option>
 
-										<option value="corporate">Corporate</option>
+										<option id="corporate" value="corporate">Corporate</option>
 
-										<option value="hybrid">Hybrid</option>
+										<option id="hybrid" value="hybrid">Hybrid</option>
 
 									</select>
 								</div>
@@ -221,7 +221,7 @@
 							</form>
 
 							<!--RESIDENTIAL INPUTS-->
-							<form name="residential" id="residential" class="sub-form" style="display:none">
+							<form name="residential-input" id="residential-input" class="sub-form residential" style="display:none">
 							
 								<h4>Please enter the following information:</h4>
 
@@ -257,7 +257,7 @@
 							<!--/RESIDENTIAL INPUTS-->
 							
 							<!--COMMERCIAL INPUTS-->
-							<form name="commercial" id="commercial" class="sub-form" style="display:none">
+							<form name="commercial-input" id="commercial-input" class="sub-form commercial" style="display:none">
 							
 								<h4>Please enter the following information:</h4>
 
@@ -309,7 +309,7 @@
 							<!--/COMMERCIAL INPUTS-->
 							
 							<!--CORPORATE INPUTS-->
-							<form name="corporate" id="corporate" class="sub-form" style="display:none">
+							<form name="corporate-input" id="corporate-input" class="sub-form corporate" style="display:none">
 							
 								<h4>Please enter the following information:</h4>
 
@@ -361,7 +361,7 @@
 							<!--/CORPORATE INPUTS-->
 							
 							<!--HYBRID INPUTS-->
-							<form name="hybrid" id="hybrid" class="sub-form" style="display:none">
+							<form name="hybrid-input" id="hybrid-input" class="sub-form hybrid" style="display:none">
 							
 								<h4>Please enter the following information:</h4>
 
@@ -470,43 +470,43 @@
 
 									<div id="quote-output-fields">
 
-										<div class="form-group">
+										<div id="elevator-amount" class="form-group">
 											
-											<label for="elevator-amount">Number of elevators required:</label>
+											<label for="elevator-amount-output">Number of elevators required:</label>
 											
-											<input type="text" readonly class="plaintext text-right" id="elevator-amount">
+											<input type="text" readonly class="plaintext text-right" id="elevator-amount-output">
 										
 										</div>
 
-										<div class="form-group">
+										<div id="elevator-unit-price" class="form-group">
 											
-											<label for="elevator-unit-price">Price per unit:</label>
+											<label for="elevator-unit-price-output">Price per unit:</label>
 											
-											<input type="text" readonly class="plaintext text-right" id="elevator-unit-price">
+											<input type="text" readonly class="plaintext text-right" id="elevator-unit-price-output">
 										
 										</div>
 
-										<div class="form-group">
+										<div id="elevator-total-price" class="form-group">
 											
-											<label for="elevator-total-price">Price of all Elevators:</label>
+											<label for="elevator-total-price-output">Price of all Elevators:</label>
 											
-											<input type="text" readonly class="plaintext currency text-right" id="elevator-total-price">
+											<input type="text" readonly class="plaintext currency text-right" id="elevator-total-price-output">
 										
 										</div>
 
-										<div class="form-group">
+										<div id="installation-fees" class="form-group">
 											
-											<label for="installation-fees">Installation fees:</label>
+											<label for="installation-fees-output">Installation fees:</label>
 											
-											<input type="text" readonly class="plaintext currency text-right" id="installation-fees">
+											<input type="text" readonly class="plaintext currency text-right" id="installation-fees-output">
 										
 										</div>
 
-										<div class="form-group">
+										<div id="final-price" class="form-group">
 											
-											<label for="final-price">Final price:</label>
+											<label for="final-price-output">Final price:</label>
 											
-											<input type="text" readonly class="plaintext currency text-right" id="final-price">
+											<input type="text" readonly class="plaintext currency text-right" id="final-price-output">
 										
 										</div>
 										
