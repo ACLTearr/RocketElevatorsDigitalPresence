@@ -66,46 +66,46 @@
 
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 
-									<li class="active" id="home-nav"><!-- HOME -->
+									<li><!-- HOME -->
 
-										<a href="index.html">HOME</a>
+										<a id="home-nav" class="button-fix-solution" href="index.html">HOME</a>
 
 									</li>
 
 									<li><!-- SERVICES -->
 
-											<a id="services-nav" href="#" role="button" data-toggle="dropdown">SERVICES</a>
+										<button type="button" class="button-fix-solution-single" data-toggle="dropdown">SERVICES</button>
 										  
-											<div class="dropdown-menu">
+										<div class="dropdown-menu">
 
-											  <a class="dropdown-item" href="index.html#services">Services</a>
+											<a id="services-nav" class="dropdown-item" href="index.html#services">SERVICES</a>
 
-											  <a class="dropdown-item" href="residential.html">Residential</a>
+											<a class="dropdown-item" href="residential.html">RESIDENTIAL</a>
 
-											  <a class="dropdown-item" href="commercial.html">Corporate</a>
+											<a class="dropdown-item" href="commercial.html">CORPORATE</a>
 
-											  <a class="dropdown-item" href="#quote">Request a Quote</a>
+											<a class="dropdown-item scrollTo" href="#quote">REQUEST A QUOTE</a>
 
-											</div>
+										</div>
 
 									</li>
 
 									<li><!-- WORK -->
 
-										<a id="portfolio-nav" href="index.html#portfolio">PORTFOLIO</a>
+										<a id="portfolio-nav" class="button-fix-solution" href="index.html#portfolio">PORTFOLIO</a>
 										
 									</li>
 
 									<li><!-- NEWS -->
-										<a id="news-nav" href="index.html#news">NEWS</a>
+										<a id="news-nav" class="button-fix-solution" href="index.html#news">NEWS</a>
 									</li>
 
 									<li><!-- OVERVIEW -->
-										<a id="clients-nav" href="index.html#clients">CLIENTS</a>
+										<a id="clients-nav" class="button-fix-solution" href="index.html#clients">CLIENTS</a>
 									</li>
 
 									<li><!-- CONTACT -->
-										<a id="contacts-nav scrollTo" href="#contact">CONTACT</a>
+										<a id="contacts-nav scrollTo" class="button-fix-solution" href="#contact">CONTACT</a>
 									</li>
 
 								</ul>
@@ -231,7 +231,7 @@
 										
 										<label for="residential-apartment-number">Number of apartments:</label>
 										
-										<input type="number" min="1" value="1" id="residential-apartment-number" class="input-selector residential-calculated-value">
+										<input type="number" min="1" value="0" id="residential-apartment-number" class="input-selector residential-calculated-value">
 									
 									</div>
 
@@ -239,7 +239,7 @@
 										
 										<label for="residential-floor-number">Number of floors: (excluding basements)</label>
 										
-										<input type="number" min="1" value="1" id="residential-floor-number" class="input-selector residential-calculated-value">
+										<input type="number" min="1" value="0" id="residential-floor-number" class="input-selector residential-calculated-value">
 									
 									</div>
 
@@ -247,7 +247,7 @@
 										
 										<label for="residential-basement-number">Number of basements:</label>
 										
-										<input type="number" min="1" value="1" id="residential-basement-number" class="input-selector">
+										<input type="number" min="1" value="0" id="residential-basement-number" class="input-selector">
 									
 									</div>
 
@@ -267,7 +267,7 @@
 										
 										<label for="commercial-business-number">Number of distinct businesses:</label>
 										
-										<input type="number" min="1" value="1" id="commercial-business-number" class="input-selector">
+										<input type="number" min="1" value="0" id="commercial-business-number" class="input-selector">
 									
 									</div>
 
@@ -275,7 +275,7 @@
 										
 										<label for="commercial-floor-number">Number of floors: (excluding basements)</label>
 										
-										<input type="number" min="1" value="1" id="commercial-floor-number" class="input-selector">
+										<input type="number" min="1" value="0" id="commercial-floor-number" class="input-selector">
 									
 									</div>
 
@@ -283,7 +283,7 @@
 										
 										<label for="commercial-basement-number">Number of basements:</label>
 										
-										<input type="number" min="1" value="1" id="commercial-basement-number" class="input-selector">
+										<input type="number" min="1" value="0" id="commercial-basement-number" class="input-selector">
 									
 									</div>
 
@@ -291,7 +291,7 @@
 										
 										<label for="commercial-parking-spaces">Number of parking spaces:</label>
 										
-										<input type="number" min="1" value="1" id="commercial-parking-spaces" class="input-selector">
+										<input type="number" min="1" value="0" id="commercial-parking-spaces" class="input-selector">
 									
 									</div>
 
@@ -299,7 +299,7 @@
 										
 										<label for="commercial-elevator-cages">Number of elevator cages to be deployed:</label>
 										
-										<input type="number" min="1" value="1" id="commercial-elevator-cages" class="input-selector commercial-calculated-value">
+										<input type="number" min="1" value="0" id="commercial-elevator-cages" class="input-selector commercial-calculated-value">
 									
 									</div>
 
@@ -319,15 +319,15 @@
 										
 										<label for="corporate-number-of-companies">Number of separate tenant companies:</label>
 										
-										<input type="number" min="1" value="1" id="corporate-number-of-companies" class="input-selector">
+										<input type="number" min="1" value="0" id="corporate-number-of-companies" class="input-selector">
 									
 									</div>
 
 									<div id="number-of-floors" class="form-group form-field corporate">
 										
-										<label for="corporate-floor-number">Number of floors (excluding basements):</label>
+										<label for="corporate-floor-number">Number of floors: (excluding basements)</label>
 										
-										<input type="number" min="1" value="1" id="corporate-floor-number" class="input-selector corporate-calculated-value">
+										<input type="number" min="1" value="0" id="corporate-floor-number" class="input-selector corporate-calculated-value">
 									
 									</div>
 
@@ -335,7 +335,7 @@
 										
 										<label for="corporate-basement-number">Number of basements:</label>
 										
-										<input type="number" min="1" value="1" id="corporate-basement-number" class="input-selector corporate-calculated-value">
+										<input type="number" min="1" value="0" id="corporate-basement-number" class="input-selector corporate-calculated-value">
 									
 									</div>
 
@@ -343,7 +343,7 @@
 										
 										<label for="corporate-parking-spaces">Number of parking spaces:</label>
 										
-										<input type="number" min="1" value="1" id="corporate-parking-spaces" class="input-selector">
+										<input type="number" min="1" value="0" id="corporate-parking-spaces" class="input-selector">
 									
 									</div>
 
@@ -351,7 +351,7 @@
 										
 										<label for="corporate-people-floor">Maximum number of people per floor:</label>
 										
-										<input type="number" min="1" value="1" id="corporate-people-floor" class="input-selector corporate-calculated-value">
+										<input type="number" min="1" value="0" id="corporate-people-floor" class="input-selector corporate-calculated-value">
 									
 									</div>
 
@@ -371,7 +371,7 @@
 										
 										<label for="hybrid-business-number">Number of distinct businesses:</label>
 										
-										<input type="number" min="1" value="1" id="hybrid-business-number" class="input-selector">
+										<input type="number" min="1" value="0" id="hybrid-business-number" class="input-selector">
 									
 									</div>
 
@@ -379,7 +379,7 @@
 										
 										<label for="hybrid-floor-number">Number of floors: (excluding basements)</label>
 										
-										<input type="number" min="1" value="1" id="hybrid-floor-number" class="input-selector hybrid-calculated-value">
+										<input type="number" min="1" value="0" id="hybrid-floor-number" class="input-selector hybrid-calculated-value">
 									
 									</div>
 
@@ -387,7 +387,7 @@
 										
 										<label for="hybrid-basement-number">Number of basements:</label>
 										
-										<input type="number" min="1" value="1" id="hybrid-basement-number" class="input-selector hybrid-calculated-value">
+										<input type="number" min="1" value="0" id="hybrid-basement-number" class="input-selector hybrid-calculated-value">
 									
 									</div>
 
@@ -395,7 +395,7 @@
 										
 										<label for="hybrid-parking-spaces">Number of parking spaces:</label>
 										
-										<input type="number" min="1" value="1" id="hybrid-parking-spaces" class="input-selector">
+										<input type="number" min="1" value="0" id="hybrid-parking-spaces" class="input-selector">
 									
 									</div>
 
@@ -403,7 +403,7 @@
 										
 										<label for="hybrid-people-floor">Maximum number of people per floor:</label>
 										
-										<input type="number" min="1" value="1" id="hybrid-people-floor" class="input-selector hybrid-calculated-value">
+										<input type="number" min="1" value="0" id="hybrid-people-floor" class="input-selector hybrid-calculated-value">
 									</div>
 
 									<div id="business-hours" class="form-group form-field hybrid">
@@ -474,7 +474,7 @@
 											
 											<label for="elevator-amount">Number of elevators required:</label>
 											
-											<input type="text" readonly class="plaintext" id="elevator-amount">
+											<input type="text" readonly class="plaintext text-right" id="elevator-amount">
 										
 										</div>
 
@@ -482,7 +482,7 @@
 											
 											<label for="elevator-unit-price">Price per unit:</label>
 											
-											<input type="text" readonly class="plaintext" id="elevator-unit-price">
+											<input type="text" readonly class="plaintext text-right" id="elevator-unit-price">
 										
 										</div>
 
@@ -490,7 +490,7 @@
 											
 											<label for="elevator-total-price">Price of all Elevators:</label>
 											
-											<input type="text" readonly class="plaintext currency" id="elevator-total-price">
+											<input type="text" readonly class="plaintext currency text-right" id="elevator-total-price">
 										
 										</div>
 
@@ -498,7 +498,7 @@
 											
 											<label for="installation-fees">Installation fees:</label>
 											
-											<input type="text" readonly class="plaintext currency" id="installation-fees">
+											<input type="text" readonly class="plaintext currency text-right" id="installation-fees">
 										
 										</div>
 
@@ -506,7 +506,7 @@
 											
 											<label for="final-price">Final price:</label>
 											
-											<input type="text" readonly class="plaintext currency" id="final-price">
+											<input type="text" readonly class="plaintext currency text-right" id="final-price">
 										
 										</div>
 										
@@ -753,11 +753,11 @@
 						
 						<ul class="float-right m-0 list-inline mobile-block">
 							
-							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li><a href="#slider" class="scrollTo">Terms &amp; Conditions</a></li>
 							
 							<li>&bull;</li>
 							
-							<li><a href="#">Privacy</a></li>
+							<li><a href="#slider" class="scrollTo">Privacy</a></li>
 						
 						</ul>
 						
@@ -800,7 +800,7 @@
 		
 		<script src="assets/js/quote.js"></script>
 
-		<script src="assets/js/jqueryFormatCurrency-1.4.0.min.js"></script>
+		<script src="assets/plugins/jquery/jqueryFormatCurrency-1.4.0.min.js"></script>
 
 	</body>
 

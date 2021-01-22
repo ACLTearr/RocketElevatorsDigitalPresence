@@ -2,6 +2,18 @@
 	height:96px;
 	line-height:96px;
 }
+
+/*FIXONG BUTTON -- KB*/
+.button-fix-solution {
+	color:black !important;
+}
+
+/*FIXONG BUTTON -- KB*/
+.button-fix-solution-single {
+	height:41px;
+	padding:0 15px 0 15px !important;
+}
+
 #topMain.nav-pills>li>a {
 	color:#1F262D;
 	font-weight:400;
@@ -81,6 +93,11 @@
 		height:40px !important;
 		line-height:40px !important;
 		padding-top:0;
+	}
+
+	/*FIXING BUTTON ON MOBILE SCREENS -- KB*/
+	.button-fix-solution-single {
+		color:white !important;
 	}
 
 

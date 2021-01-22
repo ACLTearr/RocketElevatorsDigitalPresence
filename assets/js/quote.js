@@ -65,31 +65,39 @@ $(document).ready(function() {
     var residentialFloorNumber = $("#residential-floor-number").val();
   
     //Calculations
-    if ($("#residential-floor-number").val() && $("#residential-apartment-number").val() >= 1) {  
+    if ($("#residential-floor-number").val() >= 1) {  
       
-      var averageDoors = residentailApartmentNumber / residentialFloorNumber;
+      if ($("#residential-apartment-number").val() >= 1) {
+      
+        var averageDoors = residentailApartmentNumber / residentialFloorNumber;
     
-      var numberOfElevators = averageDoors / 6;
-    
-      var numberOfColumns = residentialFloorNumber / 20;
-    
-      var totalElevators = Math.ceil(numberOfColumns) * Math.ceil(numberOfElevators);
-    
-      var elevatorCost = totalElevators * $("input[type='radio'][name='tier-selected']:checked").val();
-    
-      var finalPrice = elevatorCost + (elevatorCost * installationFees);
-    
-      //Setting output fields
+        var numberOfElevators = averageDoors / 6;
+      
+        var numberOfColumns = residentialFloorNumber / 20;
+      
+        var totalElevators = Math.ceil(numberOfColumns) * Math.ceil(numberOfElevators);
+      
+        var elevatorCost = totalElevators * $("input[type='radio'][name='tier-selected']:checked").val();
+      
+        var finalPrice = elevatorCost + (elevatorCost * installationFees);
+      
+        //Setting output fields
 
-      $("#elevator-amount").val(totalElevators + " Elevators");
-      
-      $("#elevator-total-price").val(elevatorCost);
-      
-      $("#final-price").val(finalPrice);
-      
-      $("#installation-fees").val(elevatorCost * installationFees);
+        $("#elevator-amount").val(totalElevators + " Elevators");
+        
+        $("#elevator-total-price").val(elevatorCost);
+        
+        $("#final-price").val(finalPrice);
+        
+        $("#installation-fees").val(elevatorCost * installationFees);
 
-      $(".currency").formatCurrency();
+        $(".currency").formatCurrency();
+
+      } else {
+
+        //Do nothing
+
+      };
 
     } else {
 
@@ -142,32 +150,48 @@ $(document).ready(function() {
     var corporateBasementNumber = $("#corporate-basement-number").val();
   
     //Calculations
-    if ($("#corporate-people-floor").val() && $("#corporate-floor-number").val() && $("#corporate-basement-number").val() >= 1) {
+    if ($("#corporate-people-floor").val() >= 1) {
 
-      var totalOccupants = corporatePeopleFloor * (Number(corporateFloorNumber) + Number(corporateBasementNumber));
-    
-      var elevators = totalOccupants / 1000;
-    
-      var columns = (Number(corporateFloorNumber) + Number(corporateBasementNumber)) / 20;
-    
-      var elevatorsPerColumn = Math.ceil(elevators) / columns;
-    
-      var totalElevators = Math.ceil(elevatorsPerColumn) * Math.ceil(columns);
-    
-      var elevatorCost = totalElevators * $("input[type='radio'][name='tier-selected']:checked").val();
-    
-      var finalPrice = elevatorCost + (elevatorCost * installationFees);
-    
-      //Setting output fields
-      $("#elevator-amount").val(totalElevators + " Elevators");
-    
-      $("#elevator-total-price").val(elevatorCost);
-    
-      $("#final-price").val(finalPrice);
-    
-      $("#installation-fees").val(elevatorCost * installationFees);
+      if ($("#corporate-floor-number").val() >= 1) {
 
-      $(".currency").formatCurrency();
+        if ($("#corporate-basement-number").val() >= 1) {
+
+          var totalOccupants = corporatePeopleFloor * (Number(corporateFloorNumber) + Number(corporateBasementNumber));
+        
+          var elevators = totalOccupants / 1000;
+        
+          var columns = (Number(corporateFloorNumber) + Number(corporateBasementNumber)) / 20;
+        
+          var elevatorsPerColumn = Math.ceil(elevators) / columns;
+        
+          var totalElevators = Math.ceil(elevatorsPerColumn) * Math.ceil(columns);
+        
+          var elevatorCost = totalElevators * $("input[type='radio'][name='tier-selected']:checked").val();
+        
+          var finalPrice = elevatorCost + (elevatorCost * installationFees);
+        
+          //Setting output fields
+          $("#elevator-amount").val(totalElevators + " Elevators");
+        
+          $("#elevator-total-price").val(elevatorCost);
+        
+          $("#final-price").val(finalPrice);
+        
+          $("#installation-fees").val(elevatorCost * installationFees);
+
+          $(".currency").formatCurrency();
+
+        } else {
+
+          //Do nothing
+
+        };
+
+      } else {
+
+        //Do nothing
+
+      };
 
     } else {
 
@@ -188,32 +212,48 @@ $(document).ready(function() {
     var hybridBasementNumber = $("#hybrid-basement-number").val();
   
     //Calculations
-    if ($("#hybrid-people-floor").val() && $("#hybrid-floor-number").val() && $("#hybrid-basement-number").val() >= 1) {
+    if ($("#hybrid-people-floor").val() >= 1) {
 
-      var totalOccupants = hybridPeopleFloor * (Number(hybridFloorNumber) + Number(hybridBasementNumber));
-    
-      var elevators = totalOccupants / 1000;
-    
-      var columns = (Number(hybridFloorNumber) + Number(hybridBasementNumber)) / 20;
-    
-      var elevatorsPerColumn = Math.ceil(elevators) / columns;
-    
-      var totalElevators = Math.ceil(elevatorsPerColumn) * Math.ceil(columns);
-    
-      var elevatorCost = totalElevators * $("input[type='radio'][name='tier-selected']:checked").val();
-    
-      var finalPrice = elevatorCost + (elevatorCost * installationFees);
-    
-      //Setting output fields
-      $("#elevator-amount").val(totalElevators + " Elevators");
-    
-      $("#elevator-total-price").val(elevatorCost);
-    
-      $("#final-price").val(finalPrice);
-    
-      $("#installation-fees").val(elevatorCost * installationFees);
+      if ($("#hybrid-floor-number").val() >= 1) {
 
-      $(".currency").formatCurrency();
+        if ($("#hybrid-basement-number").val() >= 1) {
+
+          var totalOccupants = hybridPeopleFloor * (Number(hybridFloorNumber) + Number(hybridBasementNumber));
+        
+          var elevators = totalOccupants / 1000;
+        
+          var columns = (Number(hybridFloorNumber) + Number(hybridBasementNumber)) / 20;
+        
+          var elevatorsPerColumn = Math.ceil(elevators) / columns;
+        
+          var totalElevators = Math.ceil(elevatorsPerColumn) * Math.ceil(columns);
+        
+          var elevatorCost = totalElevators * $("input[type='radio'][name='tier-selected']:checked").val();
+        
+          var finalPrice = elevatorCost + (elevatorCost * installationFees);
+        
+          //Setting output fields
+          $("#elevator-amount").val(totalElevators + " Elevators");
+        
+          $("#elevator-total-price").val(elevatorCost);
+        
+          $("#final-price").val(finalPrice);
+        
+          $("#installation-fees").val(elevatorCost * installationFees);
+
+          $(".currency").formatCurrency();
+
+        } else {
+
+          //Do nothing
+
+        };
+
+      } else {
+
+        //Do nothing
+
+      };
 
     } else {
 

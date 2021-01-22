@@ -333,7 +333,6 @@
 
 		}
 
-
 		// Mobile Submenu
 		var addActiveClass 	= false;
 		jQuery("#topMain a.dropdown-toggle").bind("click", function(e) {
